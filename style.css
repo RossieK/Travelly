@@ -210,13 +210,18 @@ nav ul {
 }
 
 .cards img {
-  max-width: 15%;
-  margin: 2rem;
+  width: 15%;
+  height: 15%;
+  margin: 1.5rem;
 }
 
 .card h4,
 .card p {
   padding: 1.5rem;
+}
+
+.card p {
+  font-size: 1.5rem;
 }
 
 .card-icon {
@@ -251,7 +256,17 @@ nav ul {
   }
 
   .locations-head h3 {
-    background: rgba(19, 28, 39, 0.9);
+    background: rgba(19, 28, 39, 0.7);
     color: white;
+    -webkit-text-fill-color: white;
+  }
+
+  .card p {
+    font-size: 2rem;
+  }
+
+  .card h4,
+  .card p {
+    padding: 2.7rem;
   }
 }
