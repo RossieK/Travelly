@@ -45,6 +45,14 @@ a {
   text-decoration: none;
 }
 
+li {
+  transition: transform 0.7s;
+}
+
+li:hover {
+  transform: scale(1.4);
+}
+
 button {
   padding: 2rem 6rem;
   background: #4c6e97;
@@ -55,7 +63,8 @@ button {
   transition: background 0.5s ease-in-out;
 }
 
-button:hover {
+button:hover,
+button:focus {
   background: #26374b;
 }
 
@@ -64,6 +73,9 @@ button:hover {
 .main-head {
   background-color: #131c27;
   color: white;
+  position: sticky;
+  top: 0%;
+  z-index: 3;
 }
 
 nav {
@@ -92,7 +104,7 @@ nav ul {
 
 .hero {
   min-height: 90vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url("/img/landing-page.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -203,6 +215,7 @@ nav ul {
   margin: 2rem 5rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.7s;
+  line-height: 2;
 }
 
 .card:hover {
